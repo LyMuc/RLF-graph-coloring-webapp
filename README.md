@@ -4,7 +4,7 @@
 
 ### Introduction
 
-This application is created with the aim of providing a feasible solution for the graph coloring problem. The graph coloring problem requires assigning each vertex of a graph a color such that no two adjacent vertices share the same color. The graph coloring problem can be applied to solve several real-world problems such as scheduling, register allocation, sports scheduling, etc. (See [here](https://en.wikipedia.org/wiki/Graph_coloring#CITEREFLewis2021) for more details on the graph coloring problem).
+This application is created with the aim of providing a feasible solution for the graph coloring problem. The graph coloring problem requires assigning each vertex of a graph a color such that no two adjacent vertices share the same color. The graph coloring problem can be applied to solve several real-world problems such as scheduling, register allocation, sports scheduling, etc. (See [here](https://en.wikipedia.org/wiki/Graph_coloring) for more details on the graph coloring problem).
 
 ### Algorithms Used
 
