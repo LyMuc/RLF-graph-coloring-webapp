@@ -28,8 +28,63 @@ The graph coloring problem is an NP-hard problem, and to date, there is no gener
 ### Key Features:
 Although the response time is slow (due to the high complexity of the DP and RLF algorithms), it usually provides an optimal solution (using fewer colors) compared to other web applications that mainly rely on greedy algorithms to solve the graph coloring problem.
 
-## How to Run the Project
-1. Clone the repository:
+## How to Install and Run This Web Application
+
+I have deployed my application on AWS EC2, so you can simply click [here](http://13.211.64.117:8000/graph/) or you can clone my repo following the instructions below and run it on localhost:
+
+### Requirements
+Before proceeding with the installation steps below, you need to install [Python](https://www.python.org/) and then [pip](https://www.youtube.com/watch?v=fJKdIf11GcI). Finally, to run the C++ file, you need to install [GCC compilers](https://www.youtube.com/watch?v=sXW2VLrQ3Bs).
+
+### Installation
+1. **Install Git**  
    ```bash
-   git clone https://github.com/your-repo/graph-coloring.git
-   cd graph-coloring
+   winget install --id Git.Git -e --source winget
+   ```
+2. **Clone my repo**  
+   After installing Git, to clone my repo you need to close the cmd and restart it, but this time run as administrator.  
+   After restarting under admin rights, run the following command:  
+   ```bash
+   git clone https://github.com/LyMuc/graph-coloring-webapp
+   ```
+3. **Change directory**  
+   Navigate to the graph-coloring-webapp directory:  
+   ```bash
+   cd graph-coloring-webapp
+   ```
+4. **Install Django**  
+   Install Django using pip:  
+   ```bash
+   pip install django
+   ```
+5. **Compile the C++ file**  
+   Compile the `graphcoloring4.cpp` file:  
+   ```bash
+   g++ -o graph_coloring graphcoloring4.cpp
+6. **Make migrations and then migrate**  
+   Run the 2 following commands:  
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+7. **Create a superuser**
+In order to run this app, we need to create a superuser. Run the following command:
+```bash
+python manage.py createsuperuser
+```
+Feel free to choose your user name, email and password. (Email is optional)
+8. **Run server**
+```bash
+python manage.py runserver
+```
+When the server is hosted, you can run this webapp at this URL: http://127.0.0.1:8000/graph/
+
+### Run this application
+Follow my instructions in this video to run my webapp.
+
+
+
+
+
+
+
+
