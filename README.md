@@ -6,7 +6,7 @@
 
 This application is created with the aim of providing a feasible solution for the graph coloring problem. The graph coloring problem requires assigning each vertex of a graph a color such that no two adjacent vertices share the same color. The graph coloring problem can be applied to solve several real-world problems such as scheduling, register allocation, sports scheduling, etc. (See [here](https://en.wikipedia.org/wiki/Graph_coloring) for more details on the graph coloring problem).
 
-### Algorithms Used
+### Algorithms
 
 The graph coloring problem is an NP-hard problem, and to date, there is no general algorithm that always finds a coloring with the minimum number of colors for any given graphs. Three well-known algorithms provide a correct solution (a valid coloring) for any input graphs: Dynamic Programming, DSatur, and RLF.
 
