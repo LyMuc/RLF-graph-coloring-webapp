@@ -14,10 +14,10 @@ The graph coloring problem is an NP-hard problem, and to date, there is no gener
 1. For graphs with 20 or fewer vertices, the Dynamic Programming algorithm always provides the optimal result (the number of colors used equals the chromatic number of the graph). ([DP algorithm for graph coloring](https://www.cs.helsinki.fi/u/jwkangas/presentations/slides-eea.pdf))
 2. The DSatur algorithm provides the optimal result if the input graph is a bipartite graph, a cycle graph, or a wheel graph. ([Dsatur algorithm](https://en.wikipedia.org/wiki/DSatur) and [Pseudocode of Dsatur](https://arxiv.org/pdf/2108.09329))
 3. The RLF algorithm provides the optimal result if the input graph is a bipartite graph, a cycle graph, or a wheel graph. Generally, the RLF algorithm gives **better results than the DSatur algorithm** but takes more time. ([RLF algorithm](https://en.wikipedia.org/wiki/Recursive_largest_first_algorithm) and [Pseudocode of RLF](https://arxiv.org/pdf/2108.09329))
-4. The DP, DSatur, and RLF algorithms provide a valid coloring for any input graphs. However, most results still require more colors than the chromatic number of the graph (not optimal).
+4. The DP, DSatur and RLF algorithms provide a valid coloring for any input graphs. However, most results still require more colors than the chromatic number of the graph (not optimal).
 
 ### Web Application Implementation:
-- This web application uses the DP and RLF algorithms to solve the problem.
+- **This web application uses the DP and RLF algorithms to solve the problem.**
   - The RLF algorithm is implemented with some improvements as stated in [this paper](https://www.gerad.ca/~alainh/RLFPaper.pdf). Specifically, if the input graph has more than 20 vertices and fewer than 2000 vertices, it will be implemented according to the improvement in section 3.2.(a). If the graph has more than 2000 vertices, it will be implemented according to the improvement in section 3.2.(b) with M=10.
 
 ### Technologies Used:
